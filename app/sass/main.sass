@@ -1,0 +1,321 @@
+@import "fonts"
+@import "vars"
+body
+	background-color: white
+	color: $different
+	font: 100%
+	margin: 0
+	font-family: ubuntu, sans-serif
+	font-weight: 300
+	color: #323232
+
+.btn
+	border-radius: 2px
+	background-color: $primary
+	padding: 10px 30px
+	text-transform: uppercase
+	color: #ffffff
+	letter-spacing: 2px
+	font-weight: 600
+	font-size: 14px
+	text-decoration: none
+	&:hover
+		background-color: $different
+
+
+
+h1
+	color: black
+
+h2
+	font-family: ubuntu, sans-serif
+	text-align: center
+	font-weight: 300
+	font-size: 34px
+
+.imgLogo
+	height: 103px
+.main-head
+	padding-top: 30px
+	margin-bottom: 20px
+	p
+		text-align: right
+		font-weight: 400
+		margin: 0
+	.number
+		font-family: ubuntu, sans-serif
+		text-style: bold
+		font-size: 24px
+		letter-spacing: 2px
+	.mailblock
+		padding-top: 35px
+		.mailto
+			img
+				height: 42px
+.main-name
+	font-family: ubuntu, sans-serif
+	letter-spacing: 2px
+	line-height: 20px
+	padding-top: 35px
+	margin-bottom: 5px
+	.email
+		color: $accent
+		font-style: strong
+
+.menu
+	background-color: $different
+	color: white
+	.main-menu
+		width: 100%
+		text-align: center
+		a
+			color: white
+		li
+			text-transform: uppercase
+			font-size: 13px
+			font-family: ubuntu, sans-serif
+			padding: 15px 50px
+			letter-spacing: 3px
+			font-weight: 500
+			text-align: left
+
+		.main-menu-list
+			display: flex
+			list-style-type: 0
+			margin: 0
+			padding: 0
+			li
+				display: inline-block
+		.main-menu_btn
+			display: none
+
+.burger-click-region 
+	position: relative
+	width: 40px 
+	height: 30px 
+	cursor: pointer
+.burger-menu-piece  
+	display: block 
+	position: absolute 
+	width: 40px 
+	border-top: 6px solid $primary
+	transform-origin: 50% 50% 
+	transition: transform $menu-animation-duration $menu-animation-timing 
+	&:nth-child(1)  
+		top: 0 
+	&:nth-child(2)  
+		top: 12px 
+		opacity: 1 
+		transition: transform $menu-animation-duration $menu-animation-timing, opacity 0ms linear $menu-animation-duration / 2 
+	&:nth-child(3)  
+		top: 24px 
+	.active &  
+		f  
+			animation: burger-open-top $menu-animation-duration $menu-animation-timing forwards 
+		&:nth-child(2)  
+			opacity: 0 
+			transition: transform $menu-animation-duration $menu-animation-timing, opacity 0ms linear $menu-animation-duration / 2 	
+		&:nth-child(3)  
+			animation: burger-open-bot $menu-animation-duration $menu-animation-timing forwards 
+		.closing &    
+			&:nth-child(1)  
+			animation: burger-close-top $menu-animation-duration $menu-animation-timing forwards 
+			&:nth-child(3)  
+			animation: burger-close-bot $menu-animation-duration $menu-animation-timing forwards 
+     
+   
+ 
+
+@keyframes burger-open-top  
+  50%  
+    transform: translate3d(0, 12px, 0) 
+   
+  100%  
+    transform: translate3d(0, 12px, 0) rotate(45deg) 
+   
+ 
+
+@keyframes burger-open-bot  
+  50%  
+    transform: translate3d(0, -12px, 0) 
+   
+  100%  
+    transform: translate3d(0, -12px, 0) rotate(-45deg) 
+   
+ 
+
+@keyframes burger-close-top  
+  0%  
+    transform: translate3d(0, 12px, 0) rotate(45deg) 
+   
+  50%  
+    transform: translate3d(0, 12px, 0) rotate(0deg) 
+   
+  100%  
+    transform: translate3d(0, 0, 0) 
+   
+ 
+
+@keyframes burger-close-bot  
+  0%  
+    transform: translate3d(0, -12px, 0) rotate(-45deg) 
+   
+  50%  
+    transform: translate3d(0, -12px, 0) rotate(0deg) 
+   
+  100%  
+    transform: translate3d(0, 0, 0) 
+
+.slideshow
+	min-height: 350px
+	background-size: cover
+	background-position: center
+	
+.infosection
+	background-size: cover
+	background: #E1E1E1 url(img/sandpaper.jpg)
+	padding: 100px
+	
+	.logoblack
+		display: block
+		margin: auto
+.maintext
+	text-align: center
+	display: block
+
+.mission
+	padding: 30px
+	.infonotes
+		line-height: 32px
+		white-space: nowrap
+	.documentblock
+		padding-left: 40px
+	.documentimg
+		padding-top: 15px
+	.documentinfo
+		margin: 0
+		p
+			margin: 0
+			padding-top: 5px
+			color: #7F7F7F
+.maintitle
+	font-weight: 800
+	font-size: 18px
+
+.geography
+	padding: 30px
+	.geoimg
+		display: block
+		margin: auto
+		padding-top: 30px
+	.geotext
+		font-size: 20px
+		line-height: 24px
+	h1 
+		margin-bottom: 50px
+	.questiontip
+		background-color: #EDEDED
+		width: 430px
+		padding-top: 2px
+		padding-left: 30px
+		padding-bottom: 2px
+		margin-top: 50px
+		.question
+			font-size: 24px
+.weHelp
+	padding: 30px
+	img 
+		display: block
+		margin: auto
+	.weHelpTitle
+		text-transform: uppercase
+		text-align: center
+		font-weight: 500
+		font-size: 22px
+	p 
+		text-align: center
+		line-height: 22px
+	.weHelpStrong
+		font-weight: 600
+	h2 
+		padding-bottom: 30px
+	.btnContainer
+		display: flex
+		align-items: center
+		justify-content: center
+		padding-top: 20px
+
+.working
+	padding-top: 100px
+	margin-bottom: 100px
+	h2
+		text-align: left
+		font-size: 36px
+		letter-spacing: 1px
+	p
+		line-height: 20px
+	.btn
+		padding: 30px 20px
+
+.profi
+	padding: 80px 0px
+	background-size: cover
+	background-position: center
+	color: #ffffff
+	p
+		text-align: center
+		padding: 10px
+.sponsors
+	padding: 10px
+	img 
+		width: 100%
+	.manLogo
+		width: 45%
+		display: block
+		margin: auto
+	.expressLogo
+		width: 60%
+		display: block
+		margin: auto
+	.dkbLogo
+		margin-top: 15px
+.footer
+	background-color: $different
+	padding: 10px
+	font-size: 12px
+	letter-spacing: 1px
+	color: #e1e1e1
+
+	a 
+		text-decoration: none
+		color: #fff
+	.row
+		padding: 10px 0px
+	.discriptionFooter
+		color: #909090
+	.formTitle
+		text-transform: uppercase
+		letter-spacing: 2px
+		font-size: 16px
+		color: $primary
+		margin-top: 10px
+	#submit
+		background-color: $primary
+		width: 9%
+		padding: 8px 0px
+		border: 1px solid
+		text-transform: uppercase
+		font-weight: 600
+		&:hover
+			background-color: $different
+			color: #ffffff
+	#message
+		width: 80%
+		padding: 8px
+		padding-bottom: 20px
+		margin-top: 5px
+	#email
+		width: 70%
+		padding: 8px
+
+@import "media"
