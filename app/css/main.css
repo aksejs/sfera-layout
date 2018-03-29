@@ -44,7 +44,8 @@ h2 {
     font-family: ubuntu, sans-serif;
     text-style: bold;
     font-size: 24px;
-    letter-spacing: 2px; }
+    letter-spacing: 2px;
+    font-weight: 600; }
   .main-head .mailblock {
     padding-top: 35px; }
     .main-head .mailblock .mailto img {
@@ -381,6 +382,10 @@ h2 {
   .footer #email {
     width: 70%;
     padding: 8px; }
+
+.advice-top {
+  padding: 20px 0px;
+  background-image: url(../img/sandpaper.jpg); }
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
