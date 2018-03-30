@@ -28,7 +28,7 @@ h2 {
   font-family: ubuntu, sans-serif;
   text-align: center;
   font-weight: 300;
-  font-size: 34px; }
+  font-size: 36px; }
 
 .imgLogo {
   height: 103px; }
@@ -68,7 +68,10 @@ h2 {
     width: 100%;
     text-align: center; }
     .menu .main-menu a {
-      color: white; }
+      color: white;
+      text-decoration: none; }
+      .menu .main-menu a:hover {
+        color: #29B6F6; }
     .menu .main-menu li {
       text-transform: uppercase;
       font-size: 13px;
@@ -384,8 +387,34 @@ h2 {
     padding: 8px; }
 
 .advice-top {
-  padding: 20px 0px;
+  padding: 10px 0px;
   background-image: url(../img/sandpaper.jpg); }
+
+.gallery {
+  padding: 40px; }
+
+.rnd-advice {
+  min-height: 350px;
+  -webkit-background-size: cover;
+          background-size: cover;
+  background-position: center;
+  padding: 60px 0px;
+  color: #ffffff; }
+  .rnd-advice h2 {
+    padding-bottom: 15px; }
+  .rnd-advice p {
+    text-align: center;
+    line-height: 1.5; }
+
+.blue-advice {
+  padding: 80px 0px;
+  color: #ffffff;
+  background-color: #29B6F6; }
+  .blue-advice p {
+    text-align: center; }
+  .blue-advice img {
+    display: block;
+    margin: auto; }
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */

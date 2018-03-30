@@ -31,7 +31,7 @@ h2
 	font-family: ubuntu, sans-serif
 	text-align: center
 	font-weight: 300
-	font-size: 34px
+	font-size: 36px
 
 .imgLogo
 	height: 103px
@@ -71,6 +71,10 @@ h2
 		text-align: center
 		a
 			color: white
+			text-decoration: none
+			&:hover
+				color: $primary
+			
 		li
 			text-transform: uppercase
 			font-size: 13px
@@ -320,7 +324,33 @@ h2
 		padding: 8px
 
 .advice-top
-	padding: 20px 0px
+	padding: 10px 0px
 	background-image: url(../img/sandpaper.jpg)
+.gallery
+	padding: 40px
+
+.rnd-advice
+	min-height: 350px
+	background-size: cover
+	background-position: center
+	padding: 60px 0px
+	color: #ffffff
+	h2
+		padding-bottom: 15px
+	p
+		text-align: center
+		line-height: 1.5
+	
+.blue-advice
+	padding: 80px 0px
+	color: #ffffff
+	background-color: $primary
+	p
+		text-align: center
+	img
+		display: block
+		margin: auto
+		
+
 
 @import "media"
