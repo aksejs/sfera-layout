@@ -416,6 +416,31 @@ h2 {
     display: block;
     margin: auto; }
 
+.contact-block {
+  padding: 60px 0px; }
+  .contact-block .col-md-4 {
+    padding-right: 0; }
+  .contact-block .col-md-8 {
+    padding-left: 0; }
+  .contact-block .map-info {
+    background-color: #323232;
+    height: 400px;
+    padding: 50px 30px; }
+  .contact-block p {
+    color: #ffffff;
+    font-weight: 500;
+    line-height: 1.7;
+    font-size: 20px;
+    font-family: Arial, Helvetica Neue, Helvetica, sans-serif;
+    margin-top: 59px; }
+  .contact-block .blue-marker {
+    color: #29B6F6;
+    font-weight: 600; }
+  .contact-block .blue-line {
+    width: 100%;
+    background-color: #29B6F6;
+    height: 30px; }
+
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
 @media only screen and (max-width: 1200px) {
