@@ -533,16 +533,18 @@ h2 {
     text-align: center; }
 
 .who-partners {
-  padding: 30px; }
+  padding: 30px;
+  padding-bottom: 10px; }
   .who-partners h3 {
     font-size: 28px;
-    font-weight: 600; }
+    font-weight: 600;
+    padding: 20px 0px; }
   .who-partners p {
     font-size: 18px;
     line-height: 1.5; }
   .who-partners img {
     width: auto;
-    height: 300px;
+    height: 340px;
     padding-top: 20px; }
 
 section.client {
@@ -597,6 +599,19 @@ section.client {
   left: 0;
   right: 0;
   margin: auto; }
+
+.our-partners {
+  padding-bottom: 30px; }
+  .our-partners tr td {
+    font-size: 18px; }
+    .our-partners tr td a {
+      font-weight: 600; }
+    .our-partners tr td img {
+      width: auto;
+      height: 120px; }
+  .our-partners span {
+    color: red;
+    font-weight: 600; }
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
@@ -691,7 +706,10 @@ section.client {
         -webkit-box-align: center;
         -webkit-align-items: center;
             -ms-flex-align: center;
-                align-items: center; } }
+                align-items: center; }
+  section.client {
+    padding: 2em 0em 0em 0em;
+    background-color: #eee; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
