@@ -392,6 +392,8 @@ h2 {
 
 .gallery {
   padding: 40px; }
+  .gallery img {
+    max-width: 100%; }
 
 .rnd-advice {
   min-height: 350px;
@@ -440,6 +442,81 @@ h2 {
     width: 100%;
     background-color: #29B6F6;
     height: 30px; }
+  .contact-block .callme {
+    color: #000;
+    line-height: 1.4;
+    text-align: center;
+    font-size: 18px;
+    margin-top: 0;
+    padding-top: 20px; }
+
+.bodyline-blue {
+  background-color: #29B6F6; }
+  .bodyline-blue h1 {
+    text-align: center;
+    font-size: 48px;
+    color: #ffffff;
+    margin: 20px; }
+
+.achievement_stats {
+  padding: 30px; }
+  .achievement_stats h2 {
+    margin: 30px 0px;
+    padding-bottom: 30px; }
+  .achievement_stats p {
+    text-align: center; }
+  .achievement_stats .number-achieve {
+    font-size: 46px;
+    font-weight: 800;
+    margin: 10px 0px; }
+  .achievement_stats .title-achieve {
+    font-size: 20px;
+    margin: 5px 0px;
+    font-weight: 500; }
+  .achievement_stats .discription-achieve {
+    font-size: 16px;
+    margin-top: px; }
+  .achievement_stats .andalso-list {
+    line-height: 2.5; }
+  .achievement_stats .document-icon {
+    display: inline-block;
+    padding-top: 30px;
+    vertical-align: bottom; }
+  .achievement_stats .url-icon {
+    display: inline-block;
+    padding-left: 5px; }
+  .achievement_stats .document-disription {
+    color: #7F7F7F;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: left;
+    font-size: 14px;
+    margin-top: 10px;
+    padding-left: 50px; }
+  .achievement_stats .also-block {
+    padding: 30px 0px; }
+  .achievement_stats .stats-block {
+    padding-bottom: 50px; }
+
+.well-results {
+  padding: 50px;
+  padding-top: 20px;
+  background-color: #29B6F6;
+  color: #ffffff; }
+  .well-results p {
+    text-align: center; }
+
+.awards {
+  padding: 30px;
+  margin-bottom: 50px; }
+  .awards h2 {
+    padding-bottom: 50px; }
+  .awards img {
+    height: 250px;
+    display: block;
+    margin: auto; }
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
@@ -538,10 +615,19 @@ h2 {
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 480px) {
-  /**/ }
+  .imgLogo {
+    width: 100%;
+    height: auto; }
+  .menu .main-menu .main-menu_btn .burger-click-region {
+    left: 20px; } }
 
-/* Custom, iPhone Retina */
-@media only screen and (max-width: 320px) {
+/* Custom, 610 breakpoint */
+@media only screen and (max-width: 578px) {
+  .imgLogo {
+    width: 100%;
+    height: auto; }
+  .menu .main-menu .main-menu_btn .burger-click-region {
+    left: 20px; }
   /**/ }
 
 /*==========  Mobile First  ==========*/
