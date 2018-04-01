@@ -6,7 +6,21 @@
 	<title>КА «СФЕРА» | Главная страница</title>
 	<link rel="stylesheet" href="css/main.css">
 	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+	<script src="js/common.js"></script>
+	<script>
+	$(document).ready(function(){
+    $('.carousel-client').bxSlider({
+		auto: true,
+		slideWidth: 234,
+		minSlides: 2,
+		maxSlides: 5,
+		controls: false
+	});
+  	});
+	</script>
 </head>
 <body>
 <div class="main-head">
@@ -114,24 +128,25 @@
 		</div>
 	</div>
 </section>
-<section class="sponsors">
-	<div class="container">
-		<div class="row">
-			<div class="col-md-3">
-				<img src="img/logocenter.gif" alt="">
-			</div>
-			<div class="col-md-3">
-				<img class="manLogo"src="img/logoman.jpg" alt="">
-			</div>
-			<div class="col-md-3">
-				<img class="expressLogo" src="img/logoexpress.png" alt="">
-			</div>	
-			<div class="col-md-3">
-				<img class="dkbLogo" src="img/logodkb.png" alt="">
+<section class="client">
+		<div class="container">
+			<div class="row">
+				<div class="col-md">
+					<div class="section-title">
+						<h2>Партнеры</h2>
+					</div>
+					<div class="carousel-client">
+						<div class="slide"><img src="https://www.grandvincent-marion.fr/_codepen/slider-logo1.png"></div>
+						<div class="slide"><img src="https://www.grandvincent-marion.fr/_codepen/slider-logo2.png"></div>
+						<div class="slide"><img src="https://www.grandvincent-marion.fr/_codepen/slider-logo3.png"></div>
+						<div class="slide"><img src="https://www.grandvincent-marion.fr/_codepen/slider-logo1.png"></div>
+						<div class="slide"><img src="https://www.grandvincent-marion.fr/_codepen/slider-logo2.png"></div>
+						<div class="slide"><img src="https://www.grandvincent-marion.fr/_codepen/slider-logo3.png"></div>
+					</div>
+				</div>
 			</div>
 		</div>
-	</div>
-</section>
+	</section>
 <section class="footer">
 	<div class="container">
 		<div class="row">

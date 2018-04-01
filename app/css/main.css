@@ -323,6 +323,10 @@ h2 {
   .working .btn {
     padding: 30px 20px; }
 
+.phoneicon {
+  vertical-align: bottom;
+  display: inline-block; }
+
 .profi {
   padding: 80px 0px;
   -webkit-background-size: cover;

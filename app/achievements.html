@@ -5,9 +5,22 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 	<title>КА «СФЕРА» | Главная страница</title>
 	<link rel="stylesheet" href="css/main.css">
-    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.0.9/js/all.js" integrity="sha384-8iPTk2s/jMVj81dnzb/iFR2sdA7u06vHJyyLlAd4snFpCl/SnyUjRrbdJsw1pGIl" crossorigin="anonymous"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+	<script src="js/common.js"></script>
+	<script>
+	$(document).ready(function(){
+    $('.carousel-client').bxSlider({
+		auto: true,
+		slideWidth: 234,
+		minSlides: 2,
+		maxSlides: 5,
+		controls: false
+	});
+  	});
+	</script>
 </head>
 <body>
 <div class="main-head">
@@ -129,6 +142,25 @@
             </div>
             <div class="col-md-4">
                 <img src="img/gramota3.jpg" alt="">
+            </div>
+        </div>
+    </div>
+</section>
+<section class="client">
+    <div class="container">
+        <div class="row">
+            <div class="col-md">
+                <div class="section-title">
+                    <h2>Партнеры</h2>
+                </div>
+                <div class="carousel-client">
+                    <div class="slide"><img src="https://www.grandvincent-marion.fr/_codepen/slider-logo1.png"></div>
+                    <div class="slide"><img src="https://www.grandvincent-marion.fr/_codepen/slider-logo2.png"></div>
+                    <div class="slide"><img src="https://www.grandvincent-marion.fr/_codepen/slider-logo3.png"></div>
+                    <div class="slide"><img src="https://www.grandvincent-marion.fr/_codepen/slider-logo1.png"></div>
+                    <div class="slide"><img src="https://www.grandvincent-marion.fr/_codepen/slider-logo2.png"></div>
+                    <div class="slide"><img src="https://www.grandvincent-marion.fr/_codepen/slider-logo3.png"></div>
+                </div>
             </div>
         </div>
     </div>
